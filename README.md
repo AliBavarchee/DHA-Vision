@@ -45,21 +45,20 @@ Whether you're experimenting with generative art, exploring GANs, or simply crea
 ## 📂 Project Structure
 ```
 DHA_Vision/
-├── assets/                     # Logo and background images
-│   ├── DHA_Vision.png
-│   └── DHA_Vision_logo.png
-├── src/                        # Application source code
-│   ├── DHAVision.jl            # Main web server & logic
-│   ├── DHAVision_main.jl       # Entry point for compilation
-│   ├── utils.jl
-│   ├── styles.jl               # NFT style filters
-│   └── ml_pipeline.jl          # PCA, GAN training/generation/classification
-├── input/                      # (auto-created) upload folder
-├── output/                     # NFT styled images
-├── ml_output/                  # ML‑generated variations
-├── generated_images/           # GAN & PCA output
-├── saved_models/               # Trained PCA and GAN models (.bson)
-├── Project.toml                # Julia package specification
+├── DHA_Vision.jl
+├── nft_ml_gen2.jl
+├── generate_from_models.jl
+├── input/
+├── output/
+├── ml_output/
+├── generated_images/
+├── saved_models/
+├── DHA_Vision_ScreenShot.jpeg
+├── DHA_Vision_logo.png
+├── DHA_Vision.png
+├── Project.toml
+├── Manifest.toml
+├── License.txt
 └── README.md
 ```
 
