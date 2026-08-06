@@ -2,7 +2,8 @@
 
 
 ------
-# DHA Vision ![LOGO](DHA_Vision_logo_s.png)
+# DHA Vision
+![LOGO](DHA_Vision_logo_s.png)
 
 **NFT & ML Art Generation Suite**  
 *by [Digital__Hana__Arts®](https://github.com/DigitalHanaArts)*  
