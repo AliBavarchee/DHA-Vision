@@ -6,7 +6,7 @@
 #  Language: Julia 1.9.4
 # 
 #  Company: Digital__Hana__Arts®
-#  Author:  Ale Deragschan
+#  Authors:  Ali Deragschan, Ali Bavarcci
 # 
 #  Description:
 #    This software automatically generates NFT-style digital artworks,
