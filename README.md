@@ -7,7 +7,7 @@
 
 **NFT & ML Art Generation Suite**  
 *by [Digital__Hana__Arts®](https://github.com/DigitalHanaArts)*  
-*Author: Ali Deragschan, Ali Bavarcci*
+*Authors: Ali Deragschan, Ali Bavarcci*
 
 [![Julia](https://img.shields.io/badge/Julia-1.9.4-blueviolet?logo=julia)](https://julialang.org/)
 [![License](https://img.shields.io/badge/license-Proprietary-red)](./LICENSE)
