@@ -130,7 +130,7 @@ This is a closed‑source project. Contributions are not currently accepted.
 
 **Digital__Hana__Arts**  
 Authors: Ali Deragschan, Ali Bavarcci  
-Email: [contact@digitalhanaarts.com](mailto:ali.bavarcci@gmail.com)
+Email: [contact@digitalhanaarts.com](mailto:digital.hana.arts@gmail.com)
 
 ---
 
