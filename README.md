@@ -1,8 +1,8 @@
-# DHA Vision
+![DHA_Vision_ScreenShot](DHA_Vision_ScreenShot.jpeg)
 
 
 ------
-# DHA Vision
+# DHA Vision ![LOGO](DHA_Vision_logo_s.png)
 
 **NFT & ML Art Generation Suite**  
 *by [Digital__Hana__Arts®](https://github.com/DigitalHanaArts)*  
@@ -42,3 +42,96 @@ Whether you're experimenting with generative art, exploring GANs, or simply crea
 ---
 
 ## 📂 Project Structure
+```
+DHA_Vision/
+├── assets/                     # Logo and background images
+│   ├── DHA_Vision.png
+│   └── DHA_Vision_logo.png
+├── src/                        # Application source code
+│   ├── DHAVision.jl            # Main web server & logic
+│   ├── DHAVision_main.jl       # Entry point for compilation
+│   ├── utils.jl
+│   ├── styles.jl               # NFT style filters
+│   └── ml_pipeline.jl          # PCA, GAN training/generation/classification
+├── input/                      # (auto-created) upload folder
+├── output/                     # NFT styled images
+├── ml_output/                  # ML‑generated variations
+├── generated_images/           # GAN & PCA output
+├── saved_models/               # Trained PCA and GAN models (.bson)
+├── Project.toml                # Julia package specification
+└── README.md
+```
+
+---
+
+## 🚀 Quick Start (development mode)
+
+### Prerequisites
+- [Julia 1.9.4](https://julialang.org/downloads/)
+- All required packages (see `Project.toml`)
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/DigitalHanaArts/DHA_Vision.git
+cd DHA_Vision
+```
+
+### 2. Install dependencies
+```bash
+julia --project=. -e 'import Pkg; Pkg.resolve(); Pkg.instantiate()'
+```
+
+### 3. Launch the web application
+```bash
+julia --project=. -e 'import DHAVision; DHAVision.start_server()'
+```
+
+Open your browser at **http://localhost:8080**.
+
+---
+
+## 📦 Building a Standalone Executable
+
+To distribute the app without requiring Julia, build a self‑contained bundle with `PackageCompiler`:
+
+```julia
+using PackageCompiler
+create_app(
+    ".",
+    "DHA_Vision_App",
+    precompile_execution_file = joinpath("src", "DHAVision_main.jl"),
+    force = true,
+    include_lazy_artifacts = true,
+)
+```
+
+The resulting `DHA_Vision_App` folder contains the executable and all assets.  
+Just double‑click `DHAVision.exe` (Windows) or run `./DHAVision` (macOS/Linux) – no Julia required.
+
+---
+
+---
+
+## 📄 License
+
+This project is proprietary software.  
+Contact **Digital__Hana__Arts** for licensing inquiries.
+
+---
+
+## 🤝 Contributing
+
+This is a closed‑source project. Contributions are not currently accepted.
+
+---
+
+## 📧 Contact
+
+**Digital__Hana__Arts**  
+Authors: Ali Deragschan, Ali Bavarcci  
+Email: [contact@digitalhanaarts.com](mailto:ali.bavarcci@gmail.com)
+
+---
+
+*Built with ❤️ and Julia 1.9.4*
+```
