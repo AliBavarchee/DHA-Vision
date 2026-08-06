@@ -1,7 +1,11 @@
 # DHA Vision
 
+
+------
+# DHA Vision
+
 **NFT & ML Art Generation Suite**  
-*by [Digital__Hana__Arts](https://github.com/DigitalHanaArts)*  
+*by [Digital__Hana__Arts®](https://github.com/DigitalHanaArts)*  
 *Author: Ale Deragschan*
 
 [![Julia](https://img.shields.io/badge/Julia-1.9.4-blueviolet?logo=julia)](https://julialang.org/)
