@@ -6,7 +6,7 @@
 #  Language: Julia 1.9.4
 # 
 #  Company: Digital__Hana__Arts®
-#  Author:  Ali Deragschan, Ali Bavarcci
+#  Authors:  Ali Deragschan, Ali Bavarcci
 # 
 #  License: Proprietary – All rights reserved.
 # ==================================================
