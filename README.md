@@ -1,3 +1,6 @@
+![DHA_Vision_coldopen](DHA_Vision_coldopen.png)
+---
+---
 ![DHA_Vision_ScreenShot](DHA_Vision_ScreenShot.jpeg)
 
 
