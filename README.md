@@ -144,7 +144,7 @@ Below are representative examples of each image type produced by the pipeline.
 ### 🎨 Classical Styles (output/)
 | Cyberpunk | Vaporwave |
 |:---:|:---:|
-| <img src="output/Hana_the_girl_cyberpunk.png" width="200" height="200"> || <img src="output/Hana_the_girl_vaporwave.png" width="200" height="200"> |
+| <img src="output/Hana_the_girl_cyberpunk.png" width="200" height="200"> | | <img src="output/Hana_the_girl_vaporwave.png" width="200" height="200"> |
 | `output/Hana_the_girl_cyberpunk.png` | `output/Hana_the_girl_vaporwave.png` |
 | *Neon‑edged, high‑contrast re‑colouring.* | *Soft pink/blue wash with lifted colours.* |
 
