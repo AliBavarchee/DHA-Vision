@@ -1,8 +1,6 @@
 # DHA‑Vision — Generative Art Pipeline (v3)
 ![logo](DHA_Vision_logo.png)
 
-**Post‑modern, high‑resolution mathematical art from any photograph.**
-
 DHA‑Vision is a Julia‑based pipeline that transforms a small set of input images into a vast gallery of **generative art**.  
 It combines classical NFT style filters, machine‑learning (PCA & GAN) and a suite of mathematically‑driven generators (fractals, chaotic maps, dynamical systems) with duotone colouring, FFT texture enhancement, and fluid motion warping.  
 The result is a collection of **1024×1024**, harsh, minimalist artworks that retain a visual connection to the original photograph.
