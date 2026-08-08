@@ -136,29 +136,29 @@ Below are representative examples of each image type produced by the pipeline.
 ### 🖌️ Input
 | Original Photo |
 |:---:|
-| <img src="input/Hana_the_girl.png" width="200" height="200"> |
-| `input/Hana_the_girl.png` |
+| <img src="input/Forough_Farrokhzad_804a.jpg" width="200" height="200"> |
+| `input/Forough_Farrokhzad_804a.jpg` |
 | *The source photograph that drives the entire generation process.* |
 
 ### 🎨 Classical Styles (output/)
 | Cyberpunk | Vaporwave |
 |:---:|:---:|
-| <img src="output/Hana_the_girl_cyberpunk.png" width="200" height="200"> | <img src="output/Hana_the_girl_vaporwave.png" width="200" height="200"> |
-| `output/Hana_the_girl_cyberpunk.png` | `output/Hana_the_girl_vaporwave.png` |
+| <img src="output/Forough_Farrokhzad_804a_cyberpunk.png" width="200" height="200"> | <img src="output/Forough_Farrokhzad_804a_vaporwave.png" width="200" height="200"> |
+| `output/Forough_Farrokhzad_804a_cyberpunk.png` | `output/Forough_Farrokhzad_804a_vaporwave.png` |
 | *Neon‑edged, high‑contrast re‑colouring.* | *Soft pink/blue wash with lifted colours.* |
 
 ### 🧪 ML Outputs (ml_output/)
 | PCA Variation | GAN Generated |
 |:---:|:---:|
-| <img src="ml_output/ml_pca_Hana_the_girl_1.png" width="200" height="200"> | <img src="ml_output/ml_gan_Hana_the_girl_1.png" width="200" height="200"> |
-| `ml_output/ml_pca_Hana_the_girl_1.png` | `ml_output/ml_gan_Hana_the_girl_1.png` |
+| <img src="ml_output/ml_pca_Forough_Farrokhzad_804a_1.png" width="200" height="200"> | <img src="ml_output/ml_gan_Forough_Farrokhzad_804a_1.png" width="200" height="200"> |
+| `ml_output/ml_pca_Forough_Farrokhzad_804a_1.png` | `ml_output/ml_gan_Forough_Farrokhzad_804a_1.png` |
 | *Latent‑space exploration; subtle blend of input and style features.* | *Novel image synthesised by the trained DCGAN.* |
 
 ### 🌀 Mathematical Art (fract_output/)
 | Julia Fractal | Chaos‑Game IFS | Chirikov Map | Morph (Julia ↔ Ship) |
 |:---:|:---:|:---:|:---:|
-| <img src="fract_output/fract_ml_pca_Hana_the_girl_1_julia.png" width="200" height="200"> | <img src="fract_output/fract_ml_pca_Hana_the_girl_1_ifs.png" width="200" height="200"> | <img src="fract_output/fract_ml_pca_Hana_the_girl_1_chirikov.png" width="200" height="200"> | <img src="fract_output/fract_ml_pca_Hana_the_girl_1_morph_js_2.png" width="200" height="200"> |
-| `fract_ml_pca_Hana_the_girl_1_julia.png` | `fract_ml_pca_Hana_the_girl_1_ifs.png` | `fract_ml_pca_Hana_the_girl_1_chirikov.png` | `fract_ml_pca_Hana_the_girl_1_morph_js_2.png` |
+| <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_julia.png" width="200" height="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_ifs.png" width="200" height="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_chirikov.png" width="200" height="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_morph_js_2.png" width="200" height="200"> |
+| `fract_ml_pca_Forough_Farrokhzad_804a_1_julia.png` | `fract_ml_pca_Forough_Farrokhzad_804a_1_ifs.png` | `fract_ml_pca_Forough_Farrokhzad_804a_1_chirikov.png` | `fract_ml_pca_Forough_Farrokhzad_804a_1_morph_js_2.png` |
 | *Fluid, swirling escape‑time structure tinted with duotone palette.* | *Delicate fern built from image‑conditioned probabilities.* | *Density plot of the standard map, sharpened by FFT.* | *Smooth interpolation between Julia and Burning Ship forms.* |
 
 ---
@@ -172,4 +172,3 @@ This code is not open‑source. Redistribution, modification, and commercial use
 
 *“Where mathematics meets the photograph.”*  
 **DHA‑Vision v3** – a generative art engine by the DHA lab.
-```
