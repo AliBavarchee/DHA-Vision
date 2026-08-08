@@ -1,7 +1,9 @@
 # DHA‑Vision — Generative Art Pipeline (v3)
 ![logo](DHA_Vision_logo.png)
 
-DHA‑Vision is a Julia‑based pipeline that transforms a small set of input images into a vast gallery of **generative art**.  
+**Post‑modern, high‑resolution mathematical art from any photograph.**
+
+DHA‑Vision is a Julia‑based pipeline that transforms a small set of input images into a vast gallery of **post‑modern generative art**.  
 It combines classical NFT style filters, machine‑learning (PCA & GAN) and a suite of mathematically‑driven generators (fractals, chaotic maps, dynamical systems) with duotone colouring, FFT texture enhancement, and fluid motion warping.  
 The result is a collection of **1024×1024**, harsh, minimalist artworks that retain a visual connection to the original photograph.
 
@@ -9,7 +11,7 @@ The result is a collection of **1024×1024**, harsh, minimalist artworks that re
 
 ## ✨ Features
 
-- **10 classical image styles** – cyberpunk, vaporwave, glitch, oil, pop art, etc.
+- **10 classical image styles** – cyberpunk, vaporwave, glitch, pixel, comic, oil, hologram, gold, pop, abstract
 - **PCA latent‑space variations** – new images created by exploring the principal components of the input + style set.
 - **DCGAN generative model** – a convolutional GAN trained on the image collection, capable of producing novel images.
 - **Smart retraining** – the pipeline detects whether the input directory has changed; if not, it loads pre‑trained PCA/GAN models and skips the lengthy training step.
@@ -61,7 +63,7 @@ The principal components of all images (input + styled outputs) are computed. Fo
 
 ### 4. GAN Generation
 A lightweight DCGAN is trained on the same image pool. After training, it is used to generate additional novel images (`ml_gan_*.png`).  
-*(Note: only the PCA images are used as sources for the mathematical art step.)*
+*(Only the PCA images are used as sources for the mathematical art step.)*
 
 ### 5. Image‑Conditioned Mathematical Art
 Each PCA image is used to **parameterise** nine different mathematical generators. The image’s luminance, edge, and contrast fields control fractal coefficients, map parameters, IFS probabilities, and more.  
@@ -129,35 +131,64 @@ Pkg.add(["Images", "ImageIO", "FileIO", "ImageFiltering", "ImageTransformations"
 
 ## 🖼️ Sample Outputs
 
-Below are representative examples of each image type produced by the pipeline.
+All samples below were generated from the photograph `Forough_Farrokhzad_804a.jpg`.
+
+---
 
 ### 🖌️ Input
-| Original Photo |
+
+| Original Photograph |
 |:---:|
-| <img src="input/Forough_Farrokhzad_804a.jpg" width="200" height="200"> |
+| <img src="input/Forough_Farrokhzad_804a.jpg" width="300"> |
 | `input/Forough_Farrokhzad_804a.jpg` |
-| *The source photograph that drives the entire generation process.* |
+
+---
 
 ### 🎨 Classical Styles (output/)
-| Cyberpunk | Vaporwave |
-|:---:|:---:|
-| <img src="output/Forough_Farrokhzad_804a_cyberpunk.png" width="200" height="200"> | <img src="output/Forough_Farrokhzad_804a_vaporwave.png" width="200" height="200"> |
-| `output/Forough_Farrokhzad_804a_cyberpunk.png` | `output/Forough_Farrokhzad_804a_vaporwave.png` |
-| *Neon‑edged, high‑contrast re‑colouring.* | *Soft pink/blue wash with lifted colours.* |
+
+Each input image produces ten distinct artistic treatments:
+
+| Cyberpunk | Vaporwave | Glitch | Pixel | Comic |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="output/Forough_Farrokhzad_804a_cyberpunk.png" width="150"> | <img src="output/Forough_Farrokhzad_804a_vaporwave.png" width="150"> | <img src="output/Forough_Farrokhzad_804a_glitch.png" width="150"> | <img src="output/Forough_Farrokhzad_804a_pixel.png" width="150"> | <img src="output/Forough_Farrokhzad_804a_comic.png" width="150"> |
+
+| Oil | Hologram | Gold | Pop | Abstract |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="output/Forough_Farrokhzad_804a_oil.png" width="150"> | <img src="output/Forough_Farrokhzad_804a_hologram.png" width="150"> | <img src="output/Forough_Farrokhzad_804a_gold.png" width="150"> | <img src="output/Forough_Farrokhzad_804a_pop.png" width="150"> | <img src="output/Forough_Farrokhzad_804a_abstract.png" width="150"> |
+
+---
 
 ### 🧪 ML Outputs (ml_output/)
-| PCA Variation | GAN Generated |
-|:---:|:---:|
-| <img src="ml_output/ml_pca_Forough_Farrokhzad_804a_1.png" width="200" height="200"> | <img src="ml_output/ml_gan_Forough_Farrokhzad_804a_1.png" width="200" height="200"> |
-| `ml_output/ml_pca_Forough_Farrokhzad_804a_1.png` | `ml_output/ml_gan_Forough_Farrokhzad_804a_1.png` |
-| *Latent‑space exploration; subtle blend of input and style features.* | *Novel image synthesised by the trained DCGAN.* |
+
+PCA latent‑space variations (3 per input) and GAN‑generated images:
+
+| PCA Variant 1 | PCA Variant 2 | PCA Variant 3 | GAN Generated |
+|:---:|:---:|:---:|:---:|
+| <img src="ml_output/ml_pca_Forough_Farrokhzad_804a_1.png" width="150"> | <img src="ml_output/ml_pca_Forough_Farrokhzad_804a_2.png" width="150"> | <img src="ml_output/ml_pca_Forough_Farrokhzad_804a_3.png" width="150"> | <img src="ml_output/ml_gan_Forough_Farrokhzad_804a_1.png" width="150"> |
+
+---
 
 ### 🌀 Mathematical Art (fract_output/)
-| Julia Fractal | Chaos‑Game IFS | Chirikov Map | Morph (Julia ↔ Ship) |
-|:---:|:---:|:---:|:---:|
-| <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_julia.png" width="200" height="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_ifs.png" width="200" height="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_chirikov.png" width="200" height="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_morph_js_2.png" width="200" height="200"> |
-| `fract_ml_pca_Forough_Farrokhzad_804a_1_julia.png` | `fract_ml_pca_Forough_Farrokhzad_804a_1_ifs.png` | `fract_ml_pca_Forough_Farrokhzad_804a_1_chirikov.png` | `fract_ml_pca_Forough_Farrokhzad_804a_1_morph_js_2.png` |
-| *Fluid, swirling escape‑time structure tinted with duotone palette.* | *Delicate fern built from image‑conditioned probabilities.* | *Density plot of the standard map, sharpened by FFT.* | *Smooth interpolation between Julia and Burning Ship forms.* |
+
+Nine image‑conditioned generators, each a 1024×1024 duotone artwork:
+
+| Julia Fractal | Burning Ship | Orbit Trap |
+|:---:|:---:|:---:|
+| <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_julia.png" width="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_burning_ship.png" width="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_orbit_trap.png" width="200"> |
+
+| Chaos‑Game IFS | Markov Texture | Gradient Random Walk |
+|:---:|:---:|:---:|
+| <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_ifs.png" width="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_markov.png" width="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_randomwalk.png" width="200"> |
+
+| Chirikov Map | Hénon Map | Logistic Bifurcation |
+|:---:|:---:|:---:|
+| <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_chirikov.png" width="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_henon.png" width="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_logistic.png" width="200"> |
+
+**Morphisms & Composites** (a few examples of the many post‑modern variations):
+
+| Morph Julia ↔ Ship | Domain‑Warped Julia | Composite (Julia+IFS+Chirikov) |
+|:---:|:---:|:---:|
+| <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_morph_js_2.png" width="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_julia_warped.png" width="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_composite_jic.png" width="200"> |
 
 ---
 
