@@ -1,0 +1,22 @@
+DHA Vision – NFT & ML Art Generation Suite
+
+Copyright © 2022 Digital__Hana__Arts®
+Authors: Ali Deragschan, Ali Bavarcci
+
+All rights reserved.
+
+This software and associated documentation files (the "Software") are the proprietary 
+property of Digital__Hana__Arts. No part of the Software may be copied, modified, 
+distributed, transmitted, transcribed, stored in a retrieval system, or translated 
+into any language or computer language, in any form or by any means, electronic, 
+mechanical, magnetic, optical, chemical, manual or otherwise, without the prior 
+written permission of Digital__Hana__Arts.
+
+Use of the Software is permitted only under the terms of a separate license agreement 
+obtained from Digital__Hana__Arts. Unauthorised use, reproduction or distribution of 
+the Software may result in severe civil and criminal penalties, and will be prosecuted 
+to the maximum extent possible under the law.
+
+For licensing inquiries, please contact:
+  Digital__Hana__Arts
+  Email: contact@digitalhanaarts.com
