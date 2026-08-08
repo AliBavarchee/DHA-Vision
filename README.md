@@ -3,7 +3,7 @@
 
 **Post‑modern, high‑resolution mathematical art from any photograph.**
 
-DHA‑Vision is a Julia‑based pipeline that transforms a small set of input images into a vast gallery of **post‑modern generative art**.  
+DHA‑Vision is a Julia‑based pipeline that transforms a small set of input images into a vast gallery of **generative art**.  
 It combines classical NFT style filters, machine‑learning (PCA & GAN) and a suite of mathematically‑driven generators (fractals, chaotic maps, dynamical systems) with duotone colouring, FFT texture enhancement, and fluid motion warping.  
 The result is a collection of **1024×1024**, harsh, minimalist artworks that retain a visual connection to the original photograph.
 
@@ -184,7 +184,7 @@ Nine image‑conditioned generators, each a 1024×1024 duotone artwork:
 |:---:|:---:|:---:|
 | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_chirikov.png" width="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_henon.png" width="200"> | <img src="fract_output/fract_ml_pca_Forough_Farrokhzad_804a_1_logistic.png" width="200"> |
 
-**Morphisms & Composites** (a few examples of the many post‑modern variations):
+**Morphisms & Composites**:
 
 | Morph Julia ↔ Ship | Domain‑Warped Julia | Composite (Julia+IFS+Chirikov) |
 |:---:|:---:|:---:|
