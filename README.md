@@ -137,6 +137,7 @@ Below are representative examples of each image type produced by the pipeline.
 ### 🖌️ Input
 | Original Photo |
 |:---:|
+| ![input/Hana_the_girl.png](input/Hana_the_girl.png) |
 | `input/Hana_the_girl.png` |
 | *The source photograph that drives the entire generation process.* |
 
