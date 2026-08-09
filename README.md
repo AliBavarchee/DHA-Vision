@@ -116,7 +116,7 @@ Just double‑click `DHAVision.exe` (Windows) or run `./DHAVision` (macOS/Linux)
 ## 📜 License
 
 DHA‑Vision is open‑source software released under the [MIT License](LICENSE).  
-Copyright © 2024 **Digital__Hana__Arts®**.  
+Copyright © 2022 **Digital__Hana__Arts®**.  
 You are free to use, modify, and distribute this code, provided that the original copyright notice and license text are retained.
 
 ---
